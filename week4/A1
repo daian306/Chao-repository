@@ -1,0 +1,29 @@
+import turtle 
+
+seurat = turtle.Turtle()
+
+dot_distance = 60
+dot_distance1= 5
+width = 5
+height = 5
+distance = 12
+
+seurat.penup()
+
+for x in range(distance):
+  for y in range(height):
+      for i in range(width):
+          seurat.dot()
+          seurat.forward(dot_distance)
+      seurat.backward(dot_distance * width)
+      seurat.right(90)
+      seurat.forward(dot_distance)
+      seurat.left(90)
+  seurat.left(90)  
+  seurat.forward(dot_distance*width)    
+  seurat.right(90)
+  seurat.forward(dot_distance1)  
+
+
+    
+turtle.done()
